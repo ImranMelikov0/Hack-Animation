@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    border-right: 3px solid orange;
+    color: orange;
+    overflow: hidden;
+    width: 15%;
+    white-space: nowrap;
+    animation: p 2s steps(40, end),
+        p1 .75s step-end infinite;
+}
+
+@keyframes p {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 15%;
+    }
+}
+
+@keyframes p1 {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(bg1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s ease;
+    animation: animation 5s forwards 2s,
+        animation2 3s forwards 5s,
+        animation3 3s forwards 8s,
+        animation4 2s forwards 11s,
+        animation5 7s forwards 13s,
+        animation6 3s forwards 20s;
+}
+
+@keyframes animation {
+    0% {
+
+        transform: scale(1);
+    }
+
+    99.9% {
+        transform: scale(10);
+        background-position: bottom 90px left 30px;
+    }
+
+    100% {
+        transform: scale(1);
+        background: url(bg2.png);
+        background-size: cover;
+    }
+}
+
+@keyframes animation2 {
+    0% {
+        background: url(bg2.png);
+        transform: scale(5);
+        background-size: cover;
+    }
+
+    99.9% {
+        background: url(bg2.png);
+        transform: scale(15);
+        background-size: cover;
+        background-position: top 20px left 115px;
+    }
+
+    100% {
+        transform: scale(15);
+        background: url(bg3.png);
+        background-size: cover;
+    }
+}
+
+@keyframes animation3 {
+    0% {
+        background: url(bg3.png);
+        transform: scale(15);
+        background-size: cover;
+    }
+
+    99.9% {
+        background: url(bg3.png);
+        transform: scale(30);
+        background-size: cover;
+        background-position: bottom 50px left 10px;
+    }
+
+    100% {
+        transform: scale(1);
+        background: url(bg5.png);
+        background-size: cover;
+    }
+}
+
+@keyframes animation4 {
+    0% {
+        background: url(bg5.png);
+        transform: scale(1);
+        background-size: cover;
+    }
+
+    99.9% {
+        background: url(bg5.png);
+        transform: scale(4.6);
+        background-size: cover;
+        background-position: bottom 70px left 10px;
+    }
+
+    100% {
+        transform: scale(1);
+        background: url(bg6.png);
+        background-size: cover;
+    }
+}
+
+@keyframes animation5 {
+    0% {
+        background: url(bg6.png);
+        transform: scale(1);
+        background-size: cover;
+    }
+
+    99.9% {
+        background: url(bg6.png);
+        transform: scale(20);
+        background-size: cover;
+        background-position: bottom 105px left 40px;
+    }
+
+    100% {
+        transform: scale(1);
+        background: url(bg7.png);
+        background-size: cover;
+    }
+}
+
+@keyframes animation6 {
+    0% {
+        background: url(bg7.png);
+        transform: scale(1);
+        background-size: cover;
+    }
+
+    100% {
+        background: url(bg7.png);
+        transform: scale(1.1);
+        background-size: cover;
+        background-position: bottom 0 left 0
+    }
+
+
+}

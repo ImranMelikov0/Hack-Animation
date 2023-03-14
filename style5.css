@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+
+}
+
+.div1 {
+    border-right: 3px solid transparent;
+    position: relative;
+    margin: 50px;
+    width: 20%;
+    font-size: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: div1 2s steps(40, start) forwards 2s;
+}
+
+@keyframes div1 {
+
+    0% {
+        width: 0;
+    }
+
+    1% {
+        color: orange;
+        border-color: orange;
+    }
+
+    99.9% {
+        border-right: 3px solid orange;
+    }
+
+    100% {
+        border-color: transparent;
+        color: orange;
+
+    }
+}
+
+.div2 {
+    border-right: 3px solid transparent;
+    margin: 50px;
+    width: 20%;
+    font-size: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: div2 2s steps(40, start) forwards 4s;
+}
+
+@keyframes div2 {
+
+    0% {
+        width: 0;
+    }
+
+    1% {
+        color: orange;
+        border-color: orange;
+    }
+
+    99.9% {
+        border-right: 3px solid orange;
+    }
+
+    100% {
+        border-color: transparent;
+        color: orange;
+
+    }
+}
+
+.div4 {
+    border-right: 3px solid orange;
+    margin: 50px;
+    width: 17%;
+    font-size: 20px;
+    opacity: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: div3 2s steps(40, start) forwards 8s,
+        div4 .75s step-end infinite;
+}
+
+@keyframes div3 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        color: orange;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        color: orange;
+    }
+}
+
+@keyframes div4 {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.div3 {
+    border-right: 3px solid transparent;
+    margin: 50px;
+    width: 12%;
+    font-size: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: div5 2s steps(40, start) forwards 6s;
+}
+
+@keyframes div5 {
+
+    0% {
+        width: 0;
+    }
+
+    1% {
+        color: orange;
+        border-color: orange;
+    }
+
+    99.9% {
+        border-right: 3px solid orange;
+    }
+
+    100% {
+        border-color: transparent;
+        color: orange;
+
+    }
+}
+
+video {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: -87px;
+    right: 0;
+    outline: none;
+}
+
+
+
+div {
+    background: black;
+    width: 5050px;
+    height: 50px;
+    position: relative;
+    right: 0;
+    top: 13px;
+}

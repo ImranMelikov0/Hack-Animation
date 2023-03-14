@@ -1,0 +1,1375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: black;
+    color: orange;
+    user-select: none;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+input {
+    outline: none;
+}
+
+input[type="tel"] {
+    background: none;
+    border: none;
+    color: orange;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+label {
+    margin-left: 50px;
+}
+
+
+input:checked+form label p::before {
+    display: block;
+}
+
+
+
+input[type="checkbox"] {
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ddd;
+    position: absolute;
+    left: 30%;
+    top: 19.6%;
+    background-color: #ddd;
+    padding: 11px 60px;
+    appearance: none;
+    width: 90px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]::before {
+    content: 'Hack';
+    font-weight: bold;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background: rgb(117, 117, 117);
+    color: #fff;
+}
+
+input[type="checkbox"]:checked+form label h3 {
+    display: block;
+}
+
+
+
+p {
+    margin: 30px;
+    margin-left: 60px;
+    position: relative;
+}
+
+p::before {
+    display: none;
+
+}
+
+input[type="checkbox"]:checked+form label div::before {
+    display: block;
+}
+
+input[type="checkbox"]:checked+form label div::after {
+    display: block;
+}
+
+.number::before {
+    display: none;
+    content: '';
+    color: #ddd;
+    position: absolute;
+    right: 10%;
+    top: 20.3%;
+    animation: div 1s 1.5s 14.5 linear;
+}
+
+.number::after {
+    display: none;
+    content: '';
+    color: #ddd;
+    position: absolute;
+    right: 10%;
+    top: 20.3%;
+    animation: div1 16s linear forwards;
+}
+
+@keyframes div1 {
+    0% {
+        content: '';
+    }
+
+    99.9% {
+        content: '';
+    }
+
+    100% {
+        content: 'Number details prepeared ✅';
+    }
+}
+
+@keyframes div {
+    0% {
+        content: 'Number details prepearing.';
+    }
+
+    50% {
+        content: 'Number details prepearing..';
+    }
+
+    100% {
+        content: 'Number details prepearing...';
+    }
+}
+
+.ip::before {
+    display: none;
+    content: '';
+    color: #ddd;
+    position: absolute;
+    right: 14.4%;
+    top: 26.3%;
+    animation: ip 1s 6 2s linear;
+}
+
+.mac::before {
+    display: none;
+    content: '';
+    color: #ddd;
+    position: absolute;
+    right: 12.7%;
+    top: 33.5%;
+    animation: mac 1s 9 2s linear;
+}
+
+.mainpassword::before {
+    display: none;
+    content: '';
+    color: #ddd;
+    position: absolute;
+    right: 11.1%;
+    top: 40.7%;
+    animation: mainpassword 1s 10 2s linear;
+}
+
+.code::before {
+    display: none;
+    content: '';
+    color: #ddd;
+    position: absolute;
+    right: 12.1%;
+    top: 47.9%;
+    animation: code 1s 10 2s linear;
+}
+
+.adress::before {
+    display: none;
+    content: '';
+    color: #ddd;
+    position: absolute;
+    right: 12.2%;
+    top: 55.1%;
+    animation: adress 1s 12 2s linear;
+}
+
+.pinkod::before {
+    display: none;
+    content: '';
+    color: #ddd;
+    position: absolute;
+    right: 15.6%;
+    top: 62.3%;
+    animation: pinkod 1s 13 2s linear;
+}
+
+.servercode::before {
+    display: none;
+    content: '';
+    color: #ddd;
+    position: absolute;
+    right: 13%;
+    top: 69.5%;
+    animation: servercode 1s 13 2s linear;
+}
+
+.countrycode::before {
+    display: none;
+    content: '';
+    color: #ddd;
+    position: absolute;
+    right: 12.2%;
+    top: 76.7%;
+    animation: countrycode 1s 10 2s linear;
+}
+
+.systemcode::before {
+    display: none;
+    content: '';
+    color: #ddd;
+    position: absolute;
+    right: 12.4%;
+    top: 83.9%;
+    animation: systemcode 1s 2s 14 linear;
+}
+
+.numbermaincode::before {
+    display: none;
+    content: '';
+    color: #ddd;
+    position: absolute;
+    right: 8.4%;
+    top: 91.1%;
+    animation: numbermaincode 1s 2s 11 linear;
+}
+
+.ip::after {
+    display: none;
+    content: '';
+    color: #ddd;
+    position: absolute;
+    right: 15.2%;
+    top: 26.3%;
+    animation: ip1 8s linear forwards;
+}
+
+
+.mac::after {
+    display: none;
+    content: '';
+    color: #ddd;
+    position: absolute;
+    right: 12.7%;
+    top: 33.5%;
+    animation: mac1 11s linear forwards;
+}
+
+.mainpassword::after {
+    display: none;
+    content: '';
+    color: #ddd;
+    position: absolute;
+    right: 11.1%;
+    top: 40.7%;
+    animation: mainpassword1 12s linear forwards;
+}
+
+.code::after {
+    display: none;
+    content: '';
+    color: #ddd;
+    position: absolute;
+    right: 12.1%;
+    top: 47.9%;
+    animation: code1 12s linear forwards;
+}
+
+.adress::after {
+    display: none;
+    content: '';
+    color: #ddd;
+    position: absolute;
+    right: 12.2%;
+    top: 55.1%;
+    animation: adress1 14s linear forwards;
+}
+
+.pinkod::after {
+    display: none;
+    content: '';
+    color: #ddd;
+    position: absolute;
+    right: 15.6%;
+    top: 62.3%;
+    animation: pinkod1 15s linear forwards;
+}
+
+.servercode::after {
+    display: none;
+    content: '';
+    color: #ddd;
+    position: absolute;
+    right: 13%;
+    top: 69.5%;
+    animation: servercode1 15s linear forwards;
+}
+
+.countrycode::after {
+    display: none;
+    content: '';
+    color: #ddd;
+    position: absolute;
+    right: 12.2%;
+    top: 76.7%;
+    animation: countrycode1 12s linear forwards;
+}
+
+.systemcode::after {
+    display: none;
+    content: '';
+    color: #ddd;
+    position: absolute;
+    right: 12.4%;
+    top: 83.9%;
+    animation: systemcode1 16s linear forwards;
+}
+
+.numbermaincode::after {
+    display: none;
+    content: '';
+    color: #ddd;
+    position: absolute;
+    right: 8.4%;
+    top: 91.1%;
+    animation: numbermaincode1 13s linear forwards;
+}
+
+@keyframes ip1 {
+    0% {
+        content: '';
+    }
+
+    99.9% {
+        content: '';
+    }
+
+    100% {
+        content: 'Ip address found ✅';
+    }
+}
+
+@keyframes ip {
+    0% {
+        content: 'Ip address finding.';
+    }
+
+    50% {
+        content: 'Ip address finding..';
+    }
+
+    100% {
+        content: 'Ip address finding...';
+    }
+}
+
+@keyframes mac1 {
+    0% {
+        content: '';
+    }
+
+    99.9% {
+        content: '';
+    }
+
+    100% {
+        content: 'Mac address found ✅';
+    }
+}
+
+@keyframes mac {
+    0% {
+        content: 'Mac address finding.';
+    }
+
+    50% {
+        content: 'Mac address finding..';
+    }
+
+    100% {
+        content: 'Mac address finding...';
+    }
+}
+
+@keyframes mainpassword1 {
+    0% {
+        content: '';
+    }
+
+    99.9% {
+        content: '';
+    }
+
+    100% {
+        content: 'Main password found ✅';
+    }
+}
+
+@keyframes mainpassword {
+    0% {
+        content: 'Main password finding.';
+    }
+
+    50% {
+        content: 'Main password finding..';
+    }
+
+    100% {
+        content: 'Main password finding...';
+    }
+}
+
+@keyframes code1 {
+    0% {
+        content: '';
+    }
+
+    99.9% {
+        content: '';
+    }
+
+    100% {
+        content: 'Number code found ✅';
+    }
+}
+
+@keyframes code {
+    0% {
+        content: 'Number code finding.';
+    }
+
+    50% {
+        content: ' Number code finding..';
+    }
+
+    100% {
+        content: 'Number code finding...';
+    }
+}
+
+@keyframes adress1 {
+    0% {
+        content: '';
+    }
+
+    99.9% {
+        content: '';
+    }
+
+    100% {
+        content: 'Living address found ✅';
+    }
+}
+
+@keyframes adress {
+    0% {
+        content: 'Living address finding.';
+    }
+
+    50% {
+        content: 'Living address finding..';
+    }
+
+    100% {
+        content: 'Living address finding...';
+    }
+}
+
+@keyframes pinkod1 {
+    0% {
+        content: '';
+    }
+
+    99.9% {
+        content: '';
+    }
+
+    100% {
+        content: 'Pincode found ✅';
+    }
+}
+
+@keyframes pinkod {
+    0% {
+        content: 'Pincode finding.';
+    }
+
+    50% {
+        content: 'Pincode finding..';
+    }
+
+    100% {
+        content: 'Pincode finding...';
+    }
+}
+
+@keyframes servercode1 {
+    0% {
+        content: '';
+    }
+
+    99.9% {
+        content: '';
+    }
+
+    100% {
+        content: 'Server code found ✅';
+    }
+}
+
+@keyframes servercode {
+    0% {
+        content: 'Server code finding.';
+    }
+
+    50% {
+        content: 'Server code finding..';
+    }
+
+    100% {
+        content: 'Server code finding...';
+    }
+}
+
+@keyframes countrycode1 {
+    0% {
+        content: '';
+    }
+
+    99.9% {
+        content: '';
+    }
+
+    100% {
+        content: 'Country code found ✅';
+    }
+}
+
+@keyframes countrycode {
+    0% {
+        content: 'Country code finding.';
+    }
+
+    50% {
+        content: 'Country code finding..';
+    }
+
+    100% {
+        content: 'Country code finding...';
+    }
+}
+
+@keyframes systemcode1 {
+    0% {
+        content: '';
+    }
+
+    99.9% {
+        content: '';
+    }
+
+    100% {
+        content: 'System code found ✅';
+    }
+}
+
+@keyframes systemcode {
+    0% {
+        content: 'System code finding.';
+    }
+
+    50% {
+        content: 'System code finding..';
+    }
+
+    100% {
+        content: 'System code finding...';
+    }
+}
+
+@keyframes numbermaincode1 {
+    0% {
+        content: '';
+    }
+
+    99.9% {
+        content: '';
+    }
+
+    100% {
+        content: 'Number main code found ✅';
+    }
+}
+
+@keyframes numbermaincode {
+    0% {
+        content: 'Number main code finding.';
+    }
+
+    50% {
+        content: 'Number main code finding..';
+    }
+
+    100% {
+        content: 'Number main code finding...';
+    }
+}
+
+
+
+h3 {
+    display: none;
+    width: 14%;
+    margin: 30px;
+    margin-left: 60px;
+    margin-top: 40px;
+    overflow: hidden;
+    font-weight: 100;
+    white-space: nowrap;
+    border-right: 3px solid transparent;
+    animation: animation 1s steps(40, end),
+        steps .75s step-end infinite,
+        b .5s forwards;
+}
+
+
+
+@keyframes animation {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 11%;
+    }
+}
+
+@keyframes steps {
+
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #fff;
+    }
+
+
+}
+
+.p1::before {
+    content: '';
+    animation: p1 2s 3 ease 2s forwards,
+        p11 6s ease 2s forwards;
+}
+
+.p2::before {
+    content: '';
+    animation: p2 2s 3 ease 5s forwards,
+        p22 9s ease 2s forwards;
+}
+
+.p3::before {
+    content: '';
+    animation: p3 2s ease 3 6s forwards,
+        p33 10s ease 2s forwards;
+}
+
+.p4::before {
+    content: '';
+    animation: p4 2s ease 3 6s forwards,
+        p44 10s ease 2s forwards;
+}
+
+.p5::before {
+    content: '';
+    animation: p5 2s ease 3 8s forwards,
+        p55 12s ease 2s forwards;
+}
+
+.p6::before {
+    content: '';
+    animation: p6 2s ease 3 9s forwards,
+        p66 13s ease 2s forwards;
+}
+
+.p7::before {
+    content: '';
+    animation: p7 2s ease 3 9s forwards,
+        p77 13s ease 2s forwards;
+}
+
+.p8::before {
+    content: '';
+    animation: p8 2s ease 3 6s forwards,
+        p88 10s ease 2s forwards;
+}
+
+.p9::before {
+    content: '';
+    animation: p9 2s ease 3 10s forwards,
+        p99 14s ease 2s forwards;
+}
+
+.p10::before {
+    content: '';
+    animation: p10 2s ease 3 7s forwards,
+        p100 11s ease 2s forwards;
+}
+
+@keyframes p1 {
+    0% {
+        content: '9230293092001091920192019201290129100399100191';
+    }
+
+    10% {
+        content: '1021201020102239492020304230402030499494';
+    }
+
+    20% {
+        content: '9239348028934802849290439028304243781243284';
+    }
+
+    30% {
+        content: '32948027821309290102142300493129308120491824';
+    }
+
+    40% {
+        content: '24988834253425832543822941349';
+    }
+
+    50% {
+        content: '9239120349349109';
+    }
+
+    60% {
+        content: '345834275058904920410942918480123941092409128340213';
+    }
+
+    70% {
+        content: '6753675862434028304182301938';
+    }
+
+    80% {
+        content: '68573627856732495302490328401134910';
+    }
+
+    90% {
+        content: '6574826785647382535890283140';
+    }
+
+    100% {
+        content: '32548664023250871084794985618837020810518524123484530';
+    }
+}
+
+@keyframes p2 {
+    0% {
+        content: '996853429574539435783201091920192019201290129100399100191';
+    }
+
+    10% {
+        content: '102214712020304230402030499494';
+    }
+
+    20% {
+        content: '82470418304243781243284';
+    }
+
+    30% {
+        content: '02984378192740493129308120491824';
+    }
+
+    40% {
+        content: '02834712397443822941349';
+    }
+
+    50% {
+        content: '5734892204749109';
+    }
+
+    60% {
+        content: '978249128348819320410942918480123941092409128340213';
+    }
+
+    70% {
+        content: '134098187582018944028304182301938';
+    }
+
+    80% {
+        content: '00182349672394827384128401134910';
+    }
+
+    90% {
+        content: '12364785872814035890283140';
+    }
+
+    100% {
+        content: '19505657648135425657789536245694797776054308548666830';
+    }
+}
+
+@keyframes p3 {
+    0% {
+        content: '237149872897346192349100399100191';
+    }
+
+    10% {
+        content: '121893478492749812430402030499494';
+    }
+
+    20% {
+        content: '81243284';
+    }
+
+    30% {
+        content: '769219095728145219412493129308120491824';
+    }
+
+    40% {
+        content: '5643823164767816287657845626874625832543822941349';
+    }
+
+    50% {
+        content: '123417246129912374981109';
+    }
+
+    60% {
+        content: '89123845472987891230971247823410942918480123941092409128340213';
+    }
+
+    70% {
+        content: '76534853728764578304182324563275301938';
+    }
+
+    80% {
+        content: '67458439574891278394328401134910';
+    }
+
+    90% {
+        content: '2346716248210283140';
+    }
+
+    100% {
+        content: '13959306834549841483727787365608373184542357819651291';
+    }
+}
+
+@keyframes p4 {
+    0% {
+        content: '4528749327579239201290129100399100191';
+    }
+
+    10% {
+        content: '251762749217348304230402030499494';
+    }
+
+    20% {
+        content: '5871979821374982128304243781243284';
+    }
+
+    30% {
+        content: '88345943028580327821309290102142300493129308120491824';
+    }
+
+    40% {
+        content: '578432085234803834253425832543822941349';
+    }
+
+    50% {
+        content: '923912034239280218349109';
+    }
+
+    60% {
+        content: '45783240732957432983582345058904920410942918480123941092409128340213';
+    }
+
+    70% {
+        content: '834285345793752975897389583294587238957838932854325324182301938';
+    }
+
+    80% {
+        content: '9675483978581302490328401134910';
+    }
+
+    90% {
+        content: '123841092890283140';
+    }
+
+    100% {
+        content: '93571198066551081965484611617521893997852676597966762';
+    }
+}
+
+@keyframes p5 {
+    0% {
+        content: '923029309200234871894201290129100399100191';
+    }
+
+    10% {
+        content: '21478021374304230402030499494';
+    }
+
+    20% {
+        content: '16274943721874918244243781243284';
+    }
+
+    30% {
+        content: '128384098129487582104129308120491824';
+    }
+
+    40% {
+        content: '85231878471926433425832543822941349';
+    }
+
+    50% {
+        content: '13409149109';
+    }
+
+    60% {
+        content: '12634781236471826714920410942918480123941092409128340213';
+    }
+
+    70% {
+        content: '269841724812344028304182301938';
+    }
+
+    80% {
+        content: '1687468723678467182490328401134910';
+    }
+
+    90% {
+        content: '51267847862378145890283140';
+    }
+
+    100% {
+        content: '55745789614865050333389755708837376772408445481209486';
+    }
+}
+
+@keyframes p6 {
+    0% {
+        content: '9572897148962717948719100399100191';
+    }
+
+    10% {
+        content: '673291873897512893239492020304230402030499494';
+    }
+
+    20% {
+        content: '952138978271489274891728934712804243781243284';
+    }
+
+    30% {
+        content: '329213809411423004931293081235921824';
+    }
+
+    40% {
+        content: '25218374197892481941349';
+    }
+
+    50% {
+        content: '9223871847192449109';
+    }
+
+    60% {
+        content: '0410942940213';
+    }
+
+    70% {
+        content: '57281928304182301938';
+    }
+
+    80% {
+        content: '581879487128491234098401239481287502490328401134910';
+    }
+
+    90% {
+        content: '598128908409214132423493801235890283140';
+    }
+
+    100% {
+        content: '76741105032927004712215186878797135378175648731960529';
+    }
+}
+
+@keyframes p7 {
+    0% {
+        content: '82137418348909587496092001091920191203849021893402492019201290129100399100191';
+    }
+
+    10% {
+        content: '5798123742120102010223942383275897214792020304230402030499494';
+    }
+
+    20% {
+        content: '92393489085921085902384290439028304243781243284';
+    }
+
+    30% {
+        content: '234719280102142300493129308120491824';
+    }
+
+    40% {
+        content: '1234789172984789576122543822941349';
+    }
+
+    50% {
+        content: '92391201234819109';
+    }
+
+    60% {
+        content: '231476178264875912873418480123941092409128340213';
+    }
+
+    70% {
+        content: '7582378978127947571982348304821034028304182301938';
+    }
+
+    80% {
+        content: '852789164761778274897412341498401239481302490328401134910';
+    }
+
+    90% {
+        content: '2134132234242174891274719234781734910283140';
+    }
+
+    100% {
+        content: '37042590969933612682056327585727152209593290506143302';
+    }
+}
+
+@keyframes p8 {
+    0% {
+        content: '9230212340182748719239201290129100399100191';
+    }
+
+    10% {
+        content: '124102389051890113413249494';
+    }
+
+    20% {
+        content: '9290439028304284';
+    }
+
+    30% {
+        content: '3763986300493129308120491824';
+    }
+
+    40% {
+        content: '55362011093982992939432543822941349';
+    }
+
+    50% {
+        content: '9511094881919932911008349109';
+    }
+
+    60% {
+        content: '742561792936256778289528628985234529941092409128340213';
+    }
+
+    70% {
+        content: '758767209841875875897971892757495';
+    }
+
+    80% {
+        content: '123470217857901017747568528';
+    }
+
+    90% {
+        content: '288923849184398419489123949148120934';
+    }
+
+    100% {
+        content: '71040418243208152999683139840057894996895285194893044';
+    }
+}
+
+@keyframes p9 {
+    0% {
+        content: '617878802088758505505262128458488876860388';
+    }
+
+    10% {
+        content: '938064284928551965987289';
+    }
+
+    20% {
+        content: '974379048494423156761956423433621290925094';
+    }
+
+    30% {
+        content: '41296171325063581250546167857514202680644099239';
+    }
+
+    40% {
+        content: '2130803908854898864755245746537726';
+    }
+
+    50% {
+        content: '92391203498108349109';
+    }
+
+    60% {
+        content: '585718298853850267263124165356960893124289480123941092409128340213';
+    }
+
+    70% {
+        content: '3450471266077181862738065';
+    }
+
+    80% {
+        content: '891739897648701611000619846418403113928915';
+    }
+
+    90% {
+        content: '4885029953653243412366855197';
+    }
+
+    100% {
+        content: '60274011223874217933677957730303418982078361526401799';
+    }
+}
+
+
+@keyframes p10 {
+    0% {
+        content: '13489598941192019201290813741804900191';
+    }
+
+    10% {
+        content: '1021201021839489189381940209812891849494';
+    }
+
+    20% {
+        content: '9918948857791242942389881498194';
+    }
+
+    30% {
+        content: '93458928921384912142300498429810491824';
+    }
+
+    40% {
+        content: '05939933822992919119949553677939249';
+    }
+
+    50% {
+        content: '00991991094408349109';
+    }
+
+    60% {
+        content: '557794949443942918480123944394992010213';
+    }
+
+    70% {
+        content: '3245005994304182301938';
+    }
+
+    80% {
+        content: '34422020221239481309585483724910';
+    }
+
+    90% {
+        content: '899979699942195383140';
+    }
+
+    100% {
+        content: '13278483753284737849048912034812401284391048932014891';
+    }
+}
+
+@keyframes p11 {
+    0% {
+        color: red;
+    }
+
+    99.9% {
+        color: red;
+    }
+
+    100% {
+        color: rgb(0, 202, 0);
+    }
+}
+
+@keyframes p22 {
+    0% {
+        color: red;
+    }
+
+    99.9% {
+        color: red;
+    }
+
+    100% {
+        color: rgb(0, 202, 0);
+    }
+}
+
+@keyframes p33 {
+    0% {
+        color: red;
+    }
+
+    99.9% {
+        color: red;
+    }
+
+    100% {
+        color: rgb(0, 202, 0);
+    }
+}
+
+@keyframes p44 {
+    0% {
+        color: red;
+    }
+
+    99.9% {
+        color: red;
+    }
+
+    100% {
+        color: rgb(0, 202, 0);
+    }
+}
+
+@keyframes p55 {
+    0% {
+        color: red;
+    }
+
+    99.9% {
+        color: red;
+    }
+
+    100% {
+        color: rgb(0, 202, 0);
+    }
+}
+
+@keyframes p66 {
+    0% {
+        color: red;
+    }
+
+    99.9% {
+        color: red;
+    }
+
+    100% {
+        color: rgb(0, 202, 0);
+    }
+}
+
+@keyframes p77 {
+    0% {
+        color: red;
+    }
+
+    99.9% {
+        color: red;
+    }
+
+    100% {
+        color: rgb(0, 202, 0);
+    }
+}
+
+@keyframes p88 {
+    0% {
+        color: red;
+    }
+
+    99.9% {
+        color: red;
+    }
+
+    100% {
+        color: rgb(0, 202, 0);
+    }
+}
+
+@keyframes p99 {
+    0% {
+        color: red;
+    }
+
+    99.9% {
+        color: red;
+    }
+
+    100% {
+        color: rgb(0, 202, 0);
+    }
+}
+
+@keyframes p100 {
+    0% {
+        color: red;
+    }
+
+    99.9% {
+        color: red;
+    }
+
+    100% {
+        color: rgb(0, 202, 0);
+    }
+}
+
+a {
+    color: #fff;
+    width: 5%;
+    border-right: 3px solid transparent;
+    position: absolute;
+    text-decoration: none;
+    right: 15%;
+    top: 10%;
+    font-weight: bold;
+    font-size: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: wiev 2s steps(40, end) 27s,
+
+        a 27.3s linear;
+
+}
+
+@keyframes wiev {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 5%;
+    }
+}
+
+
+
+@keyframes a {
+    0% {
+        color: black;
+    }
+
+    99.9% {
+        color: black;
+    }
+
+    100% {
+        color: #fff;
+    }
+}
